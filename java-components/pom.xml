@@ -406,21 +406,11 @@
                                 </goals>
                             </execution>
                             <execution>
-                                <id>merge-coverage-reports</id>
+                                <id>aggregate-reports</id>
                                 <phase>test</phase>
                                 <goals>
-                                    <goal>merge</goal>
+                                    <goal>report-aggregate</goal>
                                 </goals>
-                                <configuration>
-                                    <fileSets>
-                                        <fileSet>
-                                            <directory>${project.build.directory}</directory>
-                                            <includes>
-                                                <include>*.exec</include>
-                                            </includes>
-                                        </fileSet>
-                                    </fileSets>
-                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
