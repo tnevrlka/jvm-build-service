@@ -53,10 +53,7 @@ jobs:
             exit 1
           fi
   unit:
-    runs-on: ubuntu-latest
-    steps:
-        - uses: actions/checkout@v3
-        - uses: ./.github/workflows/go-unit.yml
+    uses: ./.github/workflows/go-unit.yml
   security_scan:
     name: Security scan
     runs-on: ubuntu-latest
