@@ -18,9 +18,7 @@ jobs:
         run: mvn -V -B package -Dvalidate-format
       - name: Run unit tests
         working-directory: java-components
-        run: mvn -V test
-      - name: Generate JaCoCo report
-        run: mvn jacoco:report -Dvalidate-format
+        run: mvn -V test -Dvalidate-format
       - name: Upload code coverage report
         uses: actions/upload-artifact@v3
         with:
