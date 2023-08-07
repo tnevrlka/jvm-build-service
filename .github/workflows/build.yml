@@ -15,7 +15,9 @@ jobs:
           java-version: 17
       - name: Build with Maven
         working-directory: java-components
-        run: mvn -V -B package -Dvalidate-format
-      - name: Run unit tests
-        working-directory: java-components
-        run: mvn -V test
+        run: mvn -V -B verify -Dvalidate-format -Pcode-coverage
+      - name: Upload code coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage
+          path: java-components/target
