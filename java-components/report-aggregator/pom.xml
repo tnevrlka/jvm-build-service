@@ -15,31 +15,31 @@
     <dependencies>
         <dependency>
             <groupId>io.github.redhat-appstudio.jvmbuild</groupId>
-            <artifactId>adhoc-analyser-tool</artifactId>
+            <artifactId>hacbs-adhoc-analyser-tool</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.github.redhat-appstudio.jvmbuild</groupId>
-            <artifactId>build-recipes-database</artifactId>
+            <artifactId>hacbs-build-recipes-database</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.github.redhat-appstudio.jvmbuild</groupId>
-            <artifactId>build-request-processor</artifactId>
+            <artifactId>hacbs-build-request-processor</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.github.redhat-appstudio.jvmbuild</groupId>
-            <artifactId>cache</artifactId>
+            <artifactId>hacbs-cache</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.github.redhat-appstudio.jvmbuild</groupId>
-            <artifactId>classfile-tracker</artifactId>
+            <artifactId>hacbs-classfile-tracker</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
@@ -51,7 +51,7 @@
         </dependency>
         <dependency>
             <groupId>io.github.redhat-appstudio.jvmbuild</groupId>
-            <artifactId>resource-model</artifactId>
+            <artifactId>hacbs-resource-model</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
