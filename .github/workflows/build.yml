@@ -20,7 +20,7 @@ jobs:
         working-directory: java-components
         run: mvn -V test
       - name: Generate JaCoCo report
-        run: mvn jacoco:report
+        run: mvn -Dvalidate-format jacoco:report
       - name: Upload code coverage report
         uses: actions/upload-artifact@v3
         with:
