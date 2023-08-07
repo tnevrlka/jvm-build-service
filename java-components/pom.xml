@@ -69,6 +69,7 @@
         <module>resource-model</module>
         <module>build-request-processor</module>
         <module>cli</module>
+        <module>report-aggregator</module>
     </modules>
 
     <dependencyManagement>
