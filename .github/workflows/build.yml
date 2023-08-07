@@ -19,3 +19,7 @@ jobs:
       - name: Run unit tests
         working-directory: java-components
         run: mvn -V test
+      - name: Generate JaCoCo report
+        working-directory: java-components
+        run: mvn -V jacoco:report
+
