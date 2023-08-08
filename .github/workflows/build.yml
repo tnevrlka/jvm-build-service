@@ -26,3 +26,4 @@ jobs:
           file: java-components/*/target/jacoco.exec
           fail_ci_if_error: true
           flags: java-components
+          token: ${{ secrets.CODECOV_TOKEN }}
