@@ -23,7 +23,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
-          file: java-components/*/target/jacoco.exec
+          files: java-components/*/target/jacoco.exec
           fail_ci_if_error: true
           flags: java-components
           token: ${{ secrets.CODECOV_TOKEN }}
