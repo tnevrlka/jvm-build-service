@@ -1,0 +1,28 @@
+name: "Go unit tests"
+
+on:
+  workflow_call:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Go unit tests and Codecov
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Install Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: './go.mod'
+      - name: Build
+        run: make build
+      - name: Test
+        run: make test
+      - name: Codecov upload
+        uses: codecov/codecov-action@v3
+        with:
+          fail_ci_if_error: true
+          flags: golang
+

@@ -1,13 +1,13 @@
 comment: off
-coverage:
-  status:
-    project:
-      default:
+
+flag_management:
+  default_rules:
+    statuses:
+      - type: project
         target: auto
         threshold: 1%
         removed_code_behavior: adjust_base
-      patch:
-      default:
+      - type: patch
         informational: true
         target: auto
         removed_code_behavior: adjust_base
