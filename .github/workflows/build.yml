@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: jacoco-reports
-          path: ./java-components/*/target/site/jacoco.xml
+          path: java-components/*/target/site/jacoco/jacoco.xml
 
   codecov:
     runs-on: ubuntu-latest
